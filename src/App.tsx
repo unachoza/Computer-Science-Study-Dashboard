@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <div className="nav-bar">
-        <Nav />
+        {/* <Nav /> */}
         <PrpgressBar />
       </div>
 
