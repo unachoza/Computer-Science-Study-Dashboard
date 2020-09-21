@@ -12,6 +12,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.nav-bar {
+  display: flex;
+}
 
 .blue-text {
   color: #61dafb;
