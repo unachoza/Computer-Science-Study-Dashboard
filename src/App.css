@@ -43,3 +43,12 @@ h1 {
   position: relative;
   color: #61dafb;
 }
+.container {
+  border: solid white;
+  border-radius: 4px;
+  width: fit-content;
+  display: flex;
+  padding: 14px;
+  color: white;
+  flex-direction: column;
+}
