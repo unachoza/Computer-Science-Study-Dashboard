@@ -1,24 +1,21 @@
 .App {
-  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.nav-bar {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .blue-text {
   color: #61dafb;
+  margin: 50px 0px 20px 0px;
+  font-size: 35px;
 }
 .basic-text {
   font-weight: 900;
@@ -29,4 +26,15 @@
   font-family: sans-serif;
   display: flex;
   flex-direction: row;
+  color: white;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  width: 100%;
+  margin: 0 auto;
 }

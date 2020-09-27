@@ -1,19 +1,18 @@
 import React from 'react';
-import Nav from './Components/Nav';
-import PrpgressBar from './Components/ProgressBar';
+import ProgressBar from './Components/ProgressBar';
+import AlgoPractice from './Components/AlgoPractice';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <div className="nav-bar">
-        {/* <Nav /> */}
-        <PrpgressBar />
-      </div>
-
       <header className="App-header">
-        <div className="blue-text">Arianna, Learn Typescript and how to make money, like now.</div>
+        <div className="blue-text">Arianna, Learn Data Structures and Algorithms and how to make money, like now.</div>
       </header>
+      <main className="main">
+        <ProgressBar />
+        <AlgoPractice />
+      </main>
     </div>
   );
 }
