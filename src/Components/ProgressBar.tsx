@@ -1,4 +1,5 @@
 import React from 'react';
+// import Form from './Form/Form';
 import '../App.css';
 const udemyClasses = [
   ` ${Math.round(20000 / 258)}% ${Math.round(14600 / 258)}% — 19hrs — Zero to Master: Coding Interview`,
@@ -44,6 +45,7 @@ const ProgressBar = () => {
       <div>
         <h1>Total Study Time {totalStudyTime(courseHrs)} Hours</h1>
       </div>
+      {/* <Form /> */}
     </div>
   );
 };

@@ -12,6 +12,7 @@ function App() {
       <main className="main">
         <ProgressBar />
         <AlgoPractice />
+        <AlgoPractice />
       </main>
     </div>
   );

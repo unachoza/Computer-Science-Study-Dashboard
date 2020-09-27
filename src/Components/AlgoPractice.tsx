@@ -1,4 +1,5 @@
 import React from 'react';
+// import Form from './Form/Form';
 import '../App.css';
 
 const AlgoPractice = () => {
@@ -11,6 +12,7 @@ const AlgoPractice = () => {
         <li className="basic-text algo">Leet Code</li>
         <li className="basic-text algo">Code Wars</li>
       </ul>
+      {/* <Form /> */}
     </div>
   );
 };
