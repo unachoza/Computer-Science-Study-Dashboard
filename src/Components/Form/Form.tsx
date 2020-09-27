@@ -103,7 +103,7 @@ export class Form extends React.Component<IFormProps, IFormState> {
 
           {submitSuccess && (
             <div className="alert alert-info" role="alert">
-              The form was successfully submitted!
+              Your progress was successfully submitted!
             </div>
           )}
           {submitSuccess === false && !this.haveErrors(errors) && (
