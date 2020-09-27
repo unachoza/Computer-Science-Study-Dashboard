@@ -5,23 +5,16 @@ import { IErrors, IFormContext, FormContext } from './Form';
 type Editor = 'textbox' | 'multilinetextbox' | 'dropdown';
 
 export interface IFieldProps {
-  /* The unique field name */
   id: string;
-
-  /* The label text for the field */
   label?: string;
-
-  /* The editor for the field */
+  type: string;
   editor?: Editor;
-
-  /* The drop down items for the field */
   options?: string[];
-
-  /* The field value */
   value?: any;
+  ref: any;
 }
 
-export const Field: React.SFC<IFieldProps> = ({ id, label, editor, options, value }) => {
+export const Field: React.SFC<IFieldProps> = ({ id, label, editor, options, value, type, ref }) => {
   return (
     <div className="form-group">
       {label && <label htmlFor={id}>{label}</label>}
