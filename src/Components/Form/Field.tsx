@@ -23,54 +23,22 @@ export interface IFieldProps {
 
 export const Field: React.SFC<IFieldProps> = ({ id, label, editor, options, value }) => {
   return (
-    <FormContext.Consumer>
-      <div className="form-group">
-        {label && <label htmlFor={id}>{label}</label>}
+    <div className="form-group">
+      {label && <label htmlFor={id}>{label}</label>}
 
-        {editor!.toLowerCase() === 'textbox' && (
-          <input
-            id={id}
-            type="text"
-            value={value}
-            onChange={(e: React.FormEvent<HTMLInputElement>) => console.log(e) /* TODO: push change to form values */}
-            onBlur={(e: React.FormEvent<HTMLInputElement>) => console.log(e) /* TODO: validate field value */}
-            className="form-control"
-          />
-        )}
+      {editor!.toLowerCase() === 'textbox' && (
+        <input
+          id={id}
+          type="text"
+          value={value}
+          onChange={(e: React.FormEvent<HTMLInputElement>) => console.log(e) /* TODO: push change to form values */}
+          onBlur={(e: React.FormEvent<HTMLInputElement>) => console.log(e) /* TODO: validate field value */}
+          className="form-control"
+        />
+      )}
 
-        {editor!.toLowerCase() === 'multilinetextbox' && (
-          <textarea
-            id={id}
-            value={value}
-            onChange={
-              (e: React.FormEvent<HTMLTextAreaElement>) => console.log(e) /* TODO: push change to form values */
-            }
-            onBlur={(e: React.FormEvent<HTMLTextAreaElement>) => console.log(e) /* TODO: validate field value */}
-            className="form-control"
-          />
-        )}
-
-        {editor!.toLowerCase() === 'dropdown' && (
-          <select
-            id={id}
-            name={id}
-            value={value}
-            onChange={(e: React.FormEvent<HTMLSelectElement>) => console.log(e) /* TODO: push change to form values */}
-            onBlur={(e: React.FormEvent<HTMLSelectElement>) => console.log(e) /* TODO: validate field value */}
-            className="form-control"
-          >
-            {options &&
-              options.map((option) => (
-                <option key={option} value={option}>
-                  {option}
-                </option>
-              ))}
-          </select>
-        )}
-
-        {/* TODO - display validation error */}
-      </div>
-    </FormContext.Consumer>
+      {/* TODO - display validation error */}
+    </div>
   );
 };
 Field.defaultProps = {

@@ -1,5 +1,4 @@
-import React, { Context } from 'react';
-import { FormProvider } from './FormContext';
+import React from 'react';
 
 interface IFormProps {
   action: string;
@@ -74,36 +73,34 @@ export class Form extends React.Component<IFormProps, IFormState> {
       setValues: this.setValues,
     };
     return (
-      <FormContext.Provider value={context}>
-        <form onSubmit={this.handleSubmit} noValidate={true}>
-          <div className="container">
-            {/* TODO - render fields */}
-            {this.props.render()}
+      <form onSubmit={this.handleSubmit} noValidate={true}>
+        <div className="container">
+          {/* TODO - render fields */}
+          {this.props.render()}
 
-            <div className="form-group">
-              <button type="submit" className="btn btn-primary" disabled={this.haveErrors(errors)}>
-                Submit
-              </button>
-            </div>
-
-            {submitSuccess && (
-              <div className="alert alert-info" role="alert">
-                Your progress was successfully submitted!
-              </div>
-            )}
-            {submitSuccess === false && !this.haveErrors(errors) && (
-              <div className="alert alert-danger" role="alert">
-                Sorry, an unexpected error has occurred
-              </div>
-            )}
-            {submitSuccess === false && this.haveErrors(errors) && (
-              <div className="alert alert-danger" role="alert">
-                Sorry, the form is invalid. Please review, adjust and try again
-              </div>
-            )}
+          <div className="form-group">
+            <button type="submit" className="btn btn-primary" disabled={this.haveErrors(errors)}>
+              Submit
+            </button>
           </div>
-        </form>
-      </FormContext.Provider>
+
+          {submitSuccess && (
+            <div className="alert alert-info" role="alert">
+              Your progress was successfully submitted!
+            </div>
+          )}
+          {submitSuccess === false && !this.haveErrors(errors) && (
+            <div className="alert alert-danger" role="alert">
+              Sorry, an unexpected error has occurred
+            </div>
+          )}
+          {submitSuccess === false && this.haveErrors(errors) && (
+            <div className="alert alert-danger" role="alert">
+              Sorry, the form is invalid. Please review, adjust and try again
+            </div>
+          )}
+        </div>
+      </form>
     );
   }
 }

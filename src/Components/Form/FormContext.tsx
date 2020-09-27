@@ -1,4 +1,3 @@
-// import { AxiosInstance } from 'axios';
 import React, { ReactNode } from 'react';
 
 export type Props = {
@@ -6,7 +5,7 @@ export type Props = {
   formValues: undefined;
 };
 
-export type ProviderValue = Props; // since you know this is what the provider will be passing
+export type ProviderValue = Props;
 
 export type DefaultValue = undefined;
 
