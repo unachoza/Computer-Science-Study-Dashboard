@@ -1,5 +1,4 @@
 import React from 'react';
-import ProgressInput from './Form/ProgressInput';
 import '../App.css';
 
 const onlineClasses = [
@@ -122,7 +121,6 @@ const ProgressBar = () => {
       <div>
         <h1>Total Study Time {totalStudyTime(courseHrs)} Hours</h1>
       </div>
-      <ProgressInput />
     </div>
   );
 };
