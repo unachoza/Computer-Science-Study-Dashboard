@@ -31,7 +31,7 @@ const totalStudyTime = (courseHrs: number[]) => {
 };
 const ProgressBar = () => {
   return (
-    <>
+    <div className="main">
       {udemyClasses.map((udemyClass) => (
         <div className="basic-text">{udemyClass}</div>
       ))}
@@ -41,8 +41,10 @@ const ProgressBar = () => {
       {DataStructuresAlgorithms.map((dataStructureClass) => (
         <div className="basic-text">{dataStructureClass}</div>
       ))}
-      <h1>Total Study Time {totalStudyTime(courseHrs)} Hours</h1>
-    </>
+      <div>
+        <h1>Total Study Time {totalStudyTime(courseHrs)} Hours</h1>
+      </div>
+    </div>
   );
 };
 

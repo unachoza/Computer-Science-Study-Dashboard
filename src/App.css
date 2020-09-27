@@ -38,3 +38,9 @@ h1 {
   width: 100%;
   margin: 0 auto;
 }
+.algo {
+  width: 100%;
+  position: relative;
+  /* margin-left: 70%; */
+  color: #61dafb;
+}

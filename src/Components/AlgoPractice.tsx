@@ -3,14 +3,15 @@ import '../App.css';
 
 const AlgoPractice = () => {
   return (
-    <>
-      <h1> — Algorithm Exercises</h1>
+    <div>
+      <h1> Algorithm Exercises</h1>
+      <br />
       <ul>
-        <li>Hacker Rank</li>
-        <li>Leet Code</li>
-        <li>Code Wars</li>
+        <li className="basic-text algo">Hacker Rank</li>
+        <li className="basic-text algo">Leet Code</li>
+        <li className="basic-text algo">Code Wars</li>
       </ul>
-    </>
+    </div>
   );
 };
 
