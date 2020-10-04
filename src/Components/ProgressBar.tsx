@@ -3,13 +3,13 @@ import '../App.css';
 
 const onlineClasses = [
   {
-    completed: `${Math.round(20000 / 258)}%`,
+    completed: `${Math.round(20000 / 258)}`,
     hours: 19,
     name: 'Zero to Master: Coding Interview',
     platform: 'Udemy',
   },
   {
-    completed: `${Math.round(3300 / 36)}%`,
+    completed: `${Math.round(3300 / 36)}`,
     hours: 6,
     name: 'Coding Interview Jumpstart',
     platform: 'Udemy',
@@ -21,7 +21,7 @@ const onlineClasses = [
     platform: 'Udemy',
   },
   {
-    completed: ` ${Math.round(1600 / 85)}%`,
+    completed: `${Math.round(1600 / 85)}`,
     hours: 4.5,
     name: 'Foundations of Computer Science',
     platform: 'Udemy',
@@ -115,7 +115,17 @@ const ProgressBar = () => {
   return (
     <div className="main">
       {onlineClasses.map((udemyClass) => (
-        <div className="basic-text">{udemyClass.name}</div>
+        <div style={{ margin: 10 }}>
+          <div
+            style={{
+              background: '#9198',
+            }}
+            className="basic-text"
+          >
+            {udemyClass.name}
+          </div>
+          <div style={{ color: 'white' }}>Completed: {udemyClass.completed} %</div>
+        </div>
       ))}
 
       <div>
