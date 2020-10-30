@@ -1,6 +1,6 @@
 import React from 'react';
 import ProgressBar from './ProgressBar';
-import AlgoPractice from './AlgoPractice';
+// import AlgoPractice from './AlgoPractice';
 import '../styles/globals.css';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       </header>
       <main className="main">
         <ProgressBar />
-        <AlgoPractice />
+        {/* <AlgoPractice /> */}
       </main>
     </div>
   );
