@@ -1,7 +1,8 @@
+import '../styles/globals.css';
 import React from 'react';
-import '../styles.css';
 
-// This default export is required in a new `pages/_app.js` file.
-export default function HomePage() {
-  return <h1>me</h1>;
+function MyApp({ Component, pageProps }: any) {
+  return <Component {...pageProps} />;
 }
+
+export default MyApp;

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import '../styles/progress.module.css';
 
 const onlineClasses = [
   {
@@ -129,7 +129,7 @@ const ProgressBar = () => {
       ))}
 
       <div>
-        <h1>Total Study Time {totalStudyTime(courseHrs)} Hours</h1>
+        <h1 className="big-text">Total Study Time {totalStudyTime(courseHrs)} Hours</h1>
       </div>
     </div>
   );

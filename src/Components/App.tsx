@@ -1,7 +1,7 @@
 import React from 'react';
-import ProgressBar from './Components/ProgressBar';
-import AlgoPractice from './Components/AlgoPractice';
-import './App.css';
+import ProgressBar from './ProgressBar';
+import AlgoPractice from './AlgoPractice';
+import '../styles/globals.css';
 
 function App() {
   return (

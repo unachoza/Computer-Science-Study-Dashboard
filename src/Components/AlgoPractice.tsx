@@ -1,10 +1,10 @@
 import React from 'react';
-import '../App.css';
+import '../styles/progress.module.css';
 
 const AlgoPractice = () => {
   return (
     <div>
-      <h1> Algorithm Exercises</h1>
+      <h1 className="big-text"> Algorithm Exercises</h1>
       <br />
       <ul>
         <li className="basic-text algo">Hacker Rank</li>
