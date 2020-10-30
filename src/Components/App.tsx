@@ -2,6 +2,7 @@ import React from 'react';
 import ProgressBar from './ProgressBar';
 // import AlgoPractice from './AlgoPractice';
 import '../styles/globals.css';
+import Link from 'next/link';
 
 function App() {
   return (
@@ -11,6 +12,11 @@ function App() {
       </header>
       <main className="main">
         <ProgressBar />
+        <h2>
+          <Link href="/">
+            <a>Back to home</a>
+          </Link>
+        </h2>
         {/* <AlgoPractice /> */}
       </main>
     </div>
