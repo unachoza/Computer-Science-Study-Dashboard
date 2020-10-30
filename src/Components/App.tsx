@@ -13,7 +13,7 @@ function App() {
       <main className="main">
         <ProgressBar />
         <h2>
-          <Link href="/">
+          <Link href="https://arianna-dev.vercel.app/">
             <a>Back to home</a>
           </Link>
         </h2>
